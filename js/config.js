@@ -2,7 +2,7 @@
 const PROXY_URL = '/proxy/';    // 适用于 Cloudflare, Netlify (带重写), Vercel (带重写)
 // const HOPLAYER_URL = 'https://hoplayer.com/index.html';
 const SEARCH_HISTORY_KEY = 'videoSearchHistory';
-const MAX_HISTORY_ITEMS = 15;
+const MAX_HISTORY_ITEMS = 20;
 
 // 密码保护配置
 const PASSWORD_CONFIG = {
@@ -244,7 +244,7 @@ const API_CONFIG = {
         // 只拼接参数部分，不再包含 /api.php/provide/vod/
         path: '?ac=videolist&wd=',
         pagePath: '?ac=videolist&wd={query}&pg={page}',
-        maxPages: 20, // 最大获取页数
+        maxPages: 50, // 最大获取页数
         headers: {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
             'Accept': 'application/json'
@@ -299,7 +299,7 @@ const SECURITY_CONFIG = {
 // 添加多个自定义API源的配置
 const CUSTOM_API_CONFIG = {
     separator: ',',           // 分隔符
-    maxSources: 10,            // 最大允许的自定义源数量
+    maxSources: 20,            // 最大允许的自定义源数量
     testTimeout: 5000,        // 测试超时时间(毫秒)
     namePrefix: 'Custom-',    // 自定义源名称前缀
     validateUrl: true,        // 验证URL格式
