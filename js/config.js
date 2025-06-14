@@ -110,6 +110,14 @@ const API_SITES = {
         api: 'https://ikunzyapi.com/api.php/provide/vod',
         name: 'iKun资源'
     },
+    dongman: {
+         api: 'https://www.mdzyapi.com/api.php/provide/vod',
+         name: '动漫',        
+     },
+    wujin: {
+         api: 'https://api.wujinapi.me/api.php/provide/vod/from/wjm3u8',
+         name: '无尽资源',
+     },
     testSource: {
         api: 'https://www.example.com/api.php/provide/vod',
         name: '空内容测试源',
@@ -156,7 +164,7 @@ const API_SITES = {
      huangcang: {
          api: 'https://hsckzy.vip/api.php/provide/vod',
          name: '黄色仓库',
-         adult: true,         
+         adult: true,
      },
      yutu: {
          api: 'https://apiyutu.com/api.php/provide/vod',
@@ -166,33 +174,24 @@ const API_SITES = {
     danai: {
          api: 'https://apidanaizi.com/api.php/provide/vod',
          name: '大奶',
-         adult: true,         
+         adult: true,
      },
     xingba: {
          api: 'https://xingba111.com/api.php/provide/vod',
          name: 'X8',
-         adult: true,         
+         adult: true,
      },
     semao: {
          api: 'https://caiji.semaozy.net/inc/apijson_vod.php',
          name: '色猫',
-         adult: true,         
+         adult: true,
      },
     siwa: {
          api: 'https://siwazyw.tv/api.php/provide/vod',
          name: '丝袜',
-         adult: true,         
+         adult: true,
      },
-    dongman: {
-         api: 'https://www.mdzyapi.com/api.php/provide/vod',
-         name: '动漫',
-         adult: false,         
-     },
-    wujin: {
-         api: 'https://api.wujinapi.me/api.php/provide/vod/from/wjm3u8',
-         name: '无尽资源',
-         adult: false,         
-     },
+
     // 下面是资源失效率高的API源，不建议使用
     // subo: {
     //     api: 'https://subocaiji.com/api.php/provide/vod',
