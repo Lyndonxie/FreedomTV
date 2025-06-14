@@ -188,8 +188,11 @@ const API_SITES = {
          name: '动漫',
          adult: false,         
      },
-    
-
+    wujin: {
+         api: 'https://api.wujinapi.me/api.php/provide/vod/from/wjm3u8',
+         name: '无尽资源',
+         adult: false,         
+     },
     // 下面是资源失效率高的API源，不建议使用
     // subo: {
     //     api: 'https://subocaiji.com/api.php/provide/vod',
@@ -209,7 +212,7 @@ const API_SITES = {
 const AGGREGATED_SEARCH_CONFIG = {
     enabled: true,             // 是否启用聚合搜索
     timeout: 8000,            // 单个源超时时间（毫秒）
-    maxResults: 10000,          // 最大结果数量
+    maxResults: 1000,          // 最大结果数量
     parallelRequests: true,   // 是否并行请求所有源
     showSourceBadges: true    // 是否显示来源徽章
 };
