@@ -2,7 +2,7 @@
 const PROXY_URL = '/proxy/';    // 适用于 Cloudflare, Netlify (带重写), Vercel (带重写)
 // const HOPLAYER_URL = 'https://hoplayer.com/index.html';
 const SEARCH_HISTORY_KEY = 'videoSearchHistory';
-const MAX_HISTORY_ITEMS = 20;
+const MAX_HISTORY_ITEMS = 15;
 
 // 密码保护配置
 const PASSWORD_CONFIG = {
@@ -184,11 +184,6 @@ const API_SITES = {
     semao: {
          api: 'https://caiji.semaozy.net/inc/apijson_vod.php',
          name: '色猫',
-         adult: true,
-     },
-    siwa: {
-         api: 'https://siwazyw.tv/api.php/provide/vod',
-         name: '丝袜',
          adult: true,
      },
     siwa: {
