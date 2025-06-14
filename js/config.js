@@ -230,7 +230,7 @@ const API_SITES = {
          api: 'https://www.avre06.com/api.php/provide/vod',
          name: 'HG',
          adult: true,
-     }
+     },
 };
 
 // 添加聚合搜索的配置选项
