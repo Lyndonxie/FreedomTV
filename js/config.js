@@ -195,7 +195,7 @@ const API_SITES = {
          api: 'https://siwazyw.tv/api.php/provide/vod',
          name: '丝袜',
          adult: true,
-     },    
+     },
     xj: {
          api: 'https://api.xiaojizy.live/provide/vod',
          name: 'xj',
@@ -236,8 +236,6 @@ const API_SITES = {
          name: 'HG',
          adult: true,
      },
-    
-
     // 下面是资源失效率高的API源，不建议使用
     // subo: {
     //     api: 'https://subocaiji.com/api.php/provide/vod',
