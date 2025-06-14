@@ -2,7 +2,7 @@
 const PROXY_URL = '/proxy/';    // 适用于 Cloudflare, Netlify (带重写), Vercel (带重写)
 // const HOPLAYER_URL = 'https://hoplayer.com/index.html';
 const SEARCH_HISTORY_KEY = 'videoSearchHistory';
-const MAX_HISTORY_ITEMS = 5;
+const MAX_HISTORY_ITEMS = 20;
 
 // 密码保护配置
 const PASSWORD_CONFIG = {
@@ -191,6 +191,52 @@ const API_SITES = {
          name: '丝袜',
          adult: true,
      },
+    siwa: {
+         api: 'https://siwazyw.tv/api.php/provide/vod',
+         name: '丝袜',
+         adult: true,
+     },    
+    xj: {
+         api: 'https://api.xiaojizy.live/provide/vod',
+         name: 'xj',
+         adult: true,
+     },
+    th: {
+         api: 'https://thzy1.me/api.php/provide/vod',
+         name: 'th',
+         adult: true,
+     },
+    shark: {
+         api: 'https://shayuapi.com/api.php/provide/vod',
+         name: 'shark',
+         adult: true,
+     },
+    CL: {
+         api: 'https://www.caoliuzyw.com/api.php/provide/vod',
+         name: 'CL',
+         adult: true,
+     },
+    senglin: {
+         api: 'https://beiyong.slapibf.com/api.php/provide/vod',
+         name: '森林',
+         adult: true,
+     },
+    dd: {
+         api: 'https://api.ddapi.cc/api.php/provide/vod',
+         name: 'dd',
+         adult: true,
+     },
+    LB: {
+         api: 'https://lbapi9.com/api.php/provide/vod',
+         name: 'LB',
+         adult: true,
+     },
+        hg: {
+         api: 'https://www.avre06.com/api.php/provide/vod',
+         name: 'HG',
+         adult: true,
+     },
+    
 
     // 下面是资源失效率高的API源，不建议使用
     // subo: {
@@ -222,7 +268,7 @@ const API_CONFIG = {
         // 只拼接参数部分，不再包含 /api.php/provide/vod/
         path: '?ac=videolist&wd=',
         pagePath: '?ac=videolist&wd={query}&pg={page}',
-        maxPages: 50, // 最大获取页数
+        maxPages: 10, // 最大获取页数
         headers: {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
             'Accept': 'application/json'
@@ -277,7 +323,7 @@ const SECURITY_CONFIG = {
 // 添加多个自定义API源的配置
 const CUSTOM_API_CONFIG = {
     separator: ',',           // 分隔符
-    maxSources: 5,            // 最大允许的自定义源数量
+    maxSources: 20,            // 最大允许的自定义源数量
     testTimeout: 5000,        // 测试超时时间(毫秒)
     namePrefix: 'Custom-',    // 自定义源名称前缀
     validateUrl: true,        // 验证URL格式
