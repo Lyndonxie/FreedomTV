@@ -193,17 +193,17 @@ const API_SITES = {
      },
     xj: {
          api: 'https://api.xiaojizy.live/provide/vod',
-         name: 'xj',
+         name: 'XJ',
          adult: true,
      },
     th: {
          api: 'https://thzy1.me/api.php/provide/vod',
-         name: 'th',
+         name: 'TH',
          adult: true,
      },
     shark: {
          api: 'https://shayuapi.com/api.php/provide/vod',
-         name: 'shark',
+         name: 'Shark',
          adult: true,
      },
     CL: {
@@ -218,32 +218,19 @@ const API_SITES = {
      },
     dd: {
          api: 'https://api.ddapi.cc/api.php/provide/vod',
-         name: 'dd',
+         name: 'DD',
          adult: true,
      },
     LB: {
          api: 'https://lbapi9.com/api.php/provide/vod',
-         name: 'LB',
+         name: 'Lb',
          adult: true,
      },
-        hg: {
+    hg: {
          api: 'https://www.avre06.com/api.php/provide/vod',
          name: 'HG',
          adult: true,
-     },
-    // 下面是资源失效率高的API源，不建议使用
-    // subo: {
-    //     api: 'https://subocaiji.com/api.php/provide/vod',
-    //     name: '速播资源'
-    // },
-    // fczy: {
-    //     api: 'https://api.fczy888.me/api.php/provide/vod',
-    //     name: '蜂巢资源'
-    // },
-    // ukzy: {
-    //     api: 'https://api.ukuapi88.com/api.php/provide/vod',
-    //     name: 'U酷资源'
-    // },
+     }
 };
 
 // 添加聚合搜索的配置选项
@@ -261,7 +248,7 @@ const API_CONFIG = {
         // 只拼接参数部分，不再包含 /api.php/provide/vod/
         path: '?ac=videolist&wd=',
         pagePath: '?ac=videolist&wd={query}&pg={page}',
-        maxPages: 10, // 最大获取页数
+        maxPages: 20, // 最大获取页数
         headers: {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
             'Accept': 'application/json'
@@ -316,7 +303,7 @@ const SECURITY_CONFIG = {
 // 添加多个自定义API源的配置
 const CUSTOM_API_CONFIG = {
     separator: ',',           // 分隔符
-    maxSources: 20,            // 最大允许的自定义源数量
+    maxSources: 10,            // 最大允许的自定义源数量
     testTimeout: 5000,        // 测试超时时间(毫秒)
     namePrefix: 'Custom-',    // 自定义源名称前缀
     validateUrl: true,        // 验证URL格式
