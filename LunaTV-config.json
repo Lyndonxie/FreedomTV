@@ -402,13 +402,13 @@
       "detail": "https://siwazyw.tv"
     },
     "CL": {
-         "api": 'https://www.caoliuzyw.com/api.php/provide/vod',
-         "name": '🔞CL',
+         "api": "https://www.caoliuzyw.com/api.php/provide/vod",
+         "name": "🔞CL",
          "detail": "https://www.caoliuzyw.com"
      },
     "hg": {
-         "api": 'https://www.avre06.com/api.php/provide/vod',
-         "name": '🔞HG',
+         "api": "https://www.avre06.com/api.php/provide/vod",
+         "name": "🔞HG",
          "detail": "https://www.avre06.com"
      }
   }
